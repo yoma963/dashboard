@@ -1,0 +1,29 @@
+.nav-items {
+    padding: 4rem 0rem;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    .nav-item {
+        display: flex;
+        align-items: center;
+        padding: 2rem 2rem;
+        cursor: pointer;
+        @media only screen and (max-width: 1000px) {
+            text-align: center;
+            padding: 25px 40px;
+        }
+        &:hover {
+            background-color: #0081C9;
+        }
+        fa-icon {
+            margin-right: 20px;
+            font-size: 22px;
+            @media only screen and (max-width: 1000px) {
+                display: none;
+            }
+        }
+        span {
+            display: inline;
+        }
+    }
+}

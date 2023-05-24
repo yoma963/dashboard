@@ -1,0 +1,76 @@
+.widget-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-inline: 1rem;
+    @media only screen and (max-width: 600px) {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .benefit {
+      color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-inline: 0.6rem;
+      max-width: 10vw;
+      @media only screen and (max-width: 1200px) {
+        max-width: 18vw;
+        padding-inline: 1rem;
+      }
+      @media only screen and (max-width: 800px) {
+        max-width: 30vw;
+        margin-block: 1rem;
+      }
+      &.green {
+        .icon{
+            color: rgb(4, 67, 66);
+        }
+      }
+      &.yellow {
+        .icon{
+            color: rgb(237, 158, 32);
+        }
+      }
+      &.red {
+        .icon{
+            color: rgb(126, 5, 5);
+        }
+      }
+  
+      .icon {
+        font-size: 60px;
+        text-align: center;
+        @media only screen and (max-width: 1400px) {
+            font-size: 45px;
+          }
+        @media only screen and (max-width: 1200px) {
+          font-size: 45px;
+        }
+      }
+      .value {
+        text-align: center;
+        .top {
+          font-size: 30px;
+          @media only screen and (max-width: 1600px) {
+            font-size: 24px;
+          }
+        }
+        .bottom {
+          font-size: 20px;
+          margin-top: 10px;
+          @media only screen and (max-width: 1600px) {
+            font-size: 18px;
+          }
+          @media only screen and (max-width: 1400px) {
+            font-size: 16px;
+          }
+          @media only screen and (max-width: 1200px) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,28 @@
+$side-nav-bg-color: #5BC0F8;
+$side-nav-font-color: #fff;
+$shadow-color: #939393;
+
+.content {
+  height: 93vh;
+    display: flex;
+    @media only screen and (max-width: 1200px) {
+      justify-content: center;
+    }
+    .side-nav {
+      width: 17%;
+      min-height: calc(100vh - 70px);
+      background-color: $side-nav-bg-color;
+      color: $side-nav-font-color;
+      box-shadow: 5px 5px 5px $shadow-color;
+      @media only screen and (max-width: 1200px) {
+        visibility: hidden;
+        width: 0;
+      }
+    }
+    .main {
+      display: flex;
+      justify-content: center;
+      width: 83%;
+      padding: 1.3rem;
+    }
+  }
